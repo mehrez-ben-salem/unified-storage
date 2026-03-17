@@ -29,9 +29,9 @@ Yes. Declare one mount per storage area; each mount selects its provider indepen
 ```yaml
 unified-storage:
   reports:
-    path: s3://bpce-reports/reports
+    path: s3://company-reports/reports
   archives:
-    path: gs://bpce-archive/archives
+    path: gs://company-archive/archives
   temp:
     path: file:///opt/app/tmp
 ```
@@ -77,10 +77,10 @@ Yes.
 ```yaml
 unified-storage:
   reports-2025:
-    path: s3://bpce-data/reports/2025
+    path: s3://company-data/reports/2025
     region: eu-west-1
   reports-2026:
-    path: s3://bpce-data/reports/2026
+    path: s3://company-data/reports/2026
     region: eu-west-1
 ```
 

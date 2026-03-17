@@ -6,7 +6,6 @@
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3.0-brightgreen)](https://spring.io/projects/spring-boot)
 [![AWS SDK](https://img.shields.io/badge/AWS%20SDK%20v2-2.25.0-orange)]()
 [![GCS SDK](https://img.shields.io/badge/GCS%20SDK-26.39.0-4285F4)]()
-[![Dev Factory](https://img.shields.io/badge/BPCE-Dev%20Factory-1F3864)]()
 
 ---
 
@@ -32,9 +31,9 @@ The only change is the value of one property in `application.yml`.
 
 ## Why?
 
-150+ BPCE applications use NFS-mounted paths for file I/O. Containerising them on OpenShift or GKE requires moving off NFS. Asking each team to learn AWS SDK or GCS SDK and rewrite their I/O code would take years and introduce regression risk in critical batch and compliance code.
+Legacy applications use NFS-mounted paths for file I/O. Containerising them on public or private cloud requires moving off NFS. Asking each team to learn AWS SDK or GCS SDK and rewrite their I/O code would take years and introduce regression risk in critical batch and compliance code.
 
-Unified Storage absorbs all cloud complexity in one place. Teams add one Maven dependency, update three YAML lines, and the migration is done.
+Unified Storage absorbs all cloud complexity in one place. Teams add one Maven dependency, update some YAML lines, and the migration is done.
 
 ---
 
@@ -185,4 +184,4 @@ flowchart LR
 
 ## License
 
-Internal use only — BPCE / Dev Factory.
+

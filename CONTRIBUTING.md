@@ -63,7 +63,7 @@ Open an issue tagged `enhancement` with:
 ### Build
 
 ```bash
-git clone https://bitbucket.bpce.internal/dev-factory/unified-storage.git
+git clone https://github.com/mehrez-ben-salem/unified-storage.git
 cd unified-storage
 mvn clean install -DskipTests
 ```

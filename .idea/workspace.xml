@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96a4ebe8-b0ea-468d-bcc7-ff853c5861c5" name="Changes" comment="" />
+    <list default="true" id="96a4ebe8-b0ea-468d-bcc7-ff853c5861c5" name="Changes" comment="remove backup">
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SECURITY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SECURITY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/configuration.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/configuration.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/custom-provider.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/custom-provider.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/faq.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/faq.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/security.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/security.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unified-storage-demo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/unified-storage-demo/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "mehrez-ben-salem"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mehrez-ben-salem/unified-storage.git",
+    "accountId": "a220dd98-5fc7-49c1-b00d-d079dae28dea"
+  }
+}]]></component>
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
@@ -140,6 +162,19 @@
       <option name="presentableId" value="Default" />
       <updated>1771885707438</updated>
     </task>
+    <task id="LOCAL-00001" summary="remove backup">
+      <option name="closed" value="true" />
+      <created>1773715999977</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773715999977</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="remove backup" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove backup" />
   </component>
 </project>

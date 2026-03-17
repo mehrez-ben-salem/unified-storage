@@ -104,5 +104,5 @@ Template for future releases:
 ### Security
 -->
 
-[Unreleased]: https://bitbucket.bpce.internal/dev-factory/unified-storage/compare/v1.0.0...HEAD
-[1.0.0]: https://bitbucket.bpce.internal/dev-factory/unified-storage/releases/tag/v1.0.0
+[Unreleased]: https://github.com/mehrez-ben-salem/unified-storage/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/mehrez-ben-salem/unified-storage/releases/tag/v1.0.0

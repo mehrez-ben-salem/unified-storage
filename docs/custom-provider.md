@@ -82,7 +82,7 @@ public class AzureMountProperties extends MountPointProperties {
 
     /**
      * Azure Storage account name. Required.
-     * Example: mybpceaccount
+     * Example: myaccount
      */
     private String accountName;
 
@@ -308,7 +308,7 @@ Configure and use:
 unified-storage:
   reports:
     path: abfs://my-container/data/reports
-    account-name: mybpceaccount
+    account-name: myaccount
     account-key: secret://cyberark/conjur/azure/storage-key
 ```
 

@@ -66,9 +66,9 @@ unified-storage:
 unified-storage:
   # Scality on-premise
   reports:
-    path: s3://bpce-bucket/reports
+    path: s3://company-bucket/reports
     region: eu-west-1
-    endpoint: https://s3.scality.bpce.internal
+    endpoint: https://s3.scality.company
     access-key: secret://cyberark/conjur/s3/access-key
     secret-key: secret://cyberark/conjur/s3/secret-key
 
@@ -122,8 +122,8 @@ credentials-json: secret://cyberark/conjur/gcs/sa-json
 ```yaml
 unified-storage:
   gcs-logs:
-    path: gs://bpce-logs/app
-    project-id: bpce-gcp-prod-123456
+    path: gs://company-logs/app
+    project-id: company-gcp-prod-123456
     # credentials-json omitted → Workload Identity used automatically
 ```
 
@@ -251,8 +251,8 @@ unified-storage:
 # application-prod.yml (or Kubernetes ConfigMap)
 unified-storage:
   reports:
-    path: s3://bpce-reports/data/reports
-    endpoint: https://s3.scality.bpce.internal
+    path: s3://company-reports/data/reports
+    endpoint: https://s3.scality.company
     access-key: secret://cyberark/conjur/s3/reports/access-key
     secret-key: secret://cyberark/conjur/s3/reports/secret-key
 ```

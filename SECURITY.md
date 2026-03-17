@@ -16,7 +16,7 @@ If you discover a vulnerability in Unified Storage, please disclose it responsib
 
 ### How to Report
 
-Open a confidential ticket in the BPCE internal tracker with the label `security` and component `dev-factory/unified-storage`, or send an email to **dev-factory-security@bpce.fr** (internal only).
+Open a confidential ticket in the cowork tracker with the label `security` and component `unified-storage`, or send an email to **security@mehrez-ben-salem.com**.
 
 Please include:
 

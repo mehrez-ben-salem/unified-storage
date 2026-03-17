@@ -76,8 +76,8 @@ When absent, Application Default Credentials resolve in order:
     "s3:AbortMultipartUpload", "s3:ListMultipartUploadParts"
   ],
   "Resource": [
-    "arn:aws:s3:::bpce-reports-bucket",
-    "arn:aws:s3:::bpce-reports-bucket/data/reports/*"
+    "arn:aws:s3:::company-reports-bucket",
+    "arn:aws:s3:::company-reports-bucket/data/reports/*"
   ]
 }
 ```
@@ -157,7 +157,7 @@ When `posix.enabled: true`, every write updates `modified_at` in `storage_posix_
 SELECT virtual_path, size, owner, modified_at
 FROM storage_posix_metadata
 WHERE modified_at > '2026-01-01'
-  AND virtual_path LIKE 's3://bpce-reports/%'
+  AND virtual_path LIKE 's3://company-reports/%'
 ORDER BY modified_at DESC;
 ```
 

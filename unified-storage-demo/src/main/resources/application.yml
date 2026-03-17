@@ -44,7 +44,7 @@ unified-storage:
     endpoint: http://localhost:4566
     access-key: test
     secret-key: test
-    # En production BPCE :
+    # En production :
     # access-key: secret://cyberark/s3/reports/access-key
     # secret-key: secret://cyberark/s3/reports/secret-key
 
@@ -53,7 +53,7 @@ unified-storage:
     path: gs://demo-archives-bucket/data/archives
     # Pour démo locale avec GCS Emulator :
     # credentials-json: /path/to/sa.json
-    # En production BPCE :
+    # En production :
     # credentials-json: secret://cyberark/gcs/archives/sa-json
     project-id: demo-project
 
