@@ -1,0 +1,10 @@
+edu\m4z\unifiedstorage\s3\S3AutoConfiguration.class
+edu\m4z\unifiedstorage\s3\S3MultipartUploadHandle.class
+edu\m4z\unifiedstorage\s3\S3FileSystemProvider.class
+edu\m4z\unifiedstorage\s3\S3Path.class
+edu\m4z\unifiedstorage\s3\S3Path$1.class
+edu\m4z\unifiedstorage\s3\S3FileSystemProvider$2.class
+edu\m4z\unifiedstorage\s3\S3FileSystem.class
+edu\m4z\unifiedstorage\s3\S3MountProperties.class
+edu\m4z\unifiedstorage\s3\S3SmartOutputStream.class
+edu\m4z\unifiedstorage\s3\S3FileSystemProvider$1.class

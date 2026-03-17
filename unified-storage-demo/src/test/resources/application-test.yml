@@ -1,0 +1,27 @@
+# Profil test : stockage local uniquement, H2 en mémoire
+# Pas de cloud requis pour les tests unitaires
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.H2Dialect
+  flyway:
+    enabled: false   # Flyway désactivé — JPA crée les tables via ddl-auto
+
+unified-storage:
+  chunk-size: 1048576   # 1 MB pour les tests
+
+  reports:
+    path: file:///tmp/storage-test/reports
+
+  archives:
+    path: file:///tmp/storage-test/archives
+
+  temp:
+    path: file:///tmp/storage-test/temp

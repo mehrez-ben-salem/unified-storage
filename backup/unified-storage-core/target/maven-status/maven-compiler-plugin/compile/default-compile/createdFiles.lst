@@ -1,0 +1,15 @@
+edu\m4z\unifiedstorage\core\SpringAwareFileSystemProviderBridge.class
+edu\m4z\unifiedstorage\core\StorageRegistry.class
+edu\m4z\unifiedstorage\core\CrossProviderCopyHandler$ChunkedListInputStream.class
+edu\m4z\unifiedstorage\spi\UnifiedFileSystemProvider.class
+edu\m4z\unifiedstorage\config\StorageProperties$Posix.class
+META-INF\spring-configuration-metadata.json
+edu\m4z\unifiedstorage\config\StorageProperties.class
+edu\m4z\unifiedstorage\posix\PosixMetadata.class
+edu\m4z\unifiedstorage\posix\PosixMetadataService.class
+edu\m4z\unifiedstorage\config\StorageProperties$MountPointProperties.class
+edu\m4z\unifiedstorage\core\CrossProviderCopyHandler.class
+edu\m4z\unifiedstorage\spi\MultipartUploadHandle$CompletedPart.class
+edu\m4z\unifiedstorage\spi\MultipartUploadHandle.class
+edu\m4z\unifiedstorage\posix\PosixMetadataRepository.class
+edu\m4z\unifiedstorage\config\StorageAutoConfiguration.class

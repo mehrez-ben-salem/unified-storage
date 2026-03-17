@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "unified-storage",
+      "type": "edu.m4z.unifiedstorage.config.StorageProperties",
+      "sourceType": "edu.m4z.unifiedstorage.config.StorageProperties"
+    },
+    {
+      "name": "unified-storage.posix",
+      "type": "edu.m4z.unifiedstorage.config.StorageProperties$Posix",
+      "sourceType": "edu.m4z.unifiedstorage.config.StorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "unified-storage.chunk-size",
+      "type": "java.lang.Long",
+      "description": "Global chunk size for cross-provider streaming pipe and multipart uploads. Default: 64 MB. Can be overridden per mount via partSize.",
+      "sourceType": "edu.m4z.unifiedstorage.config.StorageProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "unified-storage.mounts",
+      "type": "java.util.Map<java.lang.String,edu.m4z.unifiedstorage.config.StorageProperties$MountPointProperties>",
+      "description": "Logical mount points map. Key = logical mount name (e.g. reports, archives, temp). Value = mount configuration (provider-specific subclass at runtime).",
+      "sourceType": "edu.m4z.unifiedstorage.config.StorageProperties"
+    },
+    {
+      "name": "unified-storage.posix.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Enable or disable POSIX metadata persistence. true (default) — permissions, owner, group and timestamps are stored in the storage_posix_metadata table after each write. false — all POSIX operations are no-ops; no database required. Example: <pre> unified-storage: posix: enabled: false <\/pre>",
+      "sourceType": "edu.m4z.unifiedstorage.config.StorageProperties$Posix",
+      "defaultValue": true
+    }
+  ],
+  "hints": []
+}

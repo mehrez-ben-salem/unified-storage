@@ -1,0 +1,67 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: storage-demo
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/storage_posix
+    username: ${POSIX_DB_USER:storages}
+    password: ${POSIX_DB_PASS:storages}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+  servlet:
+    multipart:
+      max-file-size: 200GB      # nécessaire pour les gros fichiers
+      max-request-size: 200GB
+
+# ----------------------------------------------------------------
+# Configuration UnifiedStorage
+# Les valeurs secret:// sont résolues par la lib secret-manager.
+# Pour la démo locale, des valeurs littérales sont utilisées.
+# ----------------------------------------------------------------
+unified-storage:
+  chunk-size: 67108864   # 64 MB
+
+  # S3 — point de montage "reports"
+  reports:
+    path: s3://demo-reports-bucket/data/reports
+    region: eu-west-1
+    # Pour démo locale avec LocalStack :
+    endpoint: http://localhost:4566
+    access-key: test
+    secret-key: test
+    # En production BPCE :
+    # access-key: secret://cyberark/s3/reports/access-key
+    # secret-key: secret://cyberark/s3/reports/secret-key
+
+  # GCS — point de montage "archives"
+  archives:
+    path: gs://demo-archives-bucket/data/archives
+    # Pour démo locale avec GCS Emulator :
+    # credentials-json: /path/to/sa.json
+    # En production BPCE :
+    # credentials-json: secret://cyberark/gcs/archives/sa-json
+    project-id: demo-project
+
+  # Local (file://) — point de montage "temp"
+  temp:
+    path: file:///tmp/storage-demo
+
+logging:
+  level:
+    edu.m4z.unifiedstorage: DEBUG
+    root: INFO

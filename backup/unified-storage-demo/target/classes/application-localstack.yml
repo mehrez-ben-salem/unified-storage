@@ -1,0 +1,29 @@
+# Profil Spring pour démo locale avec LocalStack (S3) et GCS Emulator
+# Lancer avec : --spring.profiles.active=localstack
+
+# docker run -p 4566:4566 localstack/localstack
+# docker run -p 9023:9023 fsouza/fake-gcs-server -scheme http
+
+unified-storage:
+  reports:
+    path: s3://demo-bucket/data/reports
+    region: us-east-1
+    endpoint: http://localhost:4566
+    access-key: test
+    secret-key: test
+
+  archives:
+    path: gs://demo-bucket/data/archives
+    credentials-json: |
+      {
+        "type": "service_account",
+        "project_id": "demo",
+        "private_key_id": "key1",
+        "private_key": "-----BEGIN RSA PRIVATE KEY-----\n...\n-----END RSA PRIVATE KEY-----\n",
+        "client_email": "demo@demo.iam.gserviceaccount.com",
+        "client_id": "123",
+        "token_uri": "http://localhost:9023/token"
+      }
+
+  temp:
+    path: file:///tmp/storage-demo
